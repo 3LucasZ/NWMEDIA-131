@@ -1,0 +1,89 @@
+{
+  "markers": [
+    {
+      "type": 0,
+      "name": "Nusantara",
+      "desc": "",
+      "lat": -8.6577801764274,
+      "lng": 115.26364796412958
+    },
+    {
+      "type": 0,
+      "name": "Biznet",
+      "desc": "",
+      "lat": -8.787215874034448,
+      "lng": 115.14147337162477
+    },
+    {
+      "type": 0,
+      "name": "CenterServ",
+      "desc": "",
+      "lat": -8.76133018584595,
+      "lng": 115.17917995483937
+    },
+    {
+      "type": 0,
+      "name": "Indonesia Super Corridor",
+      "desc": "",
+      "lat": -8.636521240797968,
+      "lng": 115.18337059153325
+    },
+    {
+      "type": 2,
+      "name": "Candikusuma",
+      "desc": "- Java Bali Cable System (JBCS), RFS 2013, to Java Island\n- Jalapati, RFS 2023, to Java Island",
+      "lat": -8.2946,
+      "lng": 114.5272
+    },
+    {
+      "type": 2,
+      "name": "Jimbaran",
+      "desc": "- Link 2 Phase-2, RFS May 2005, to Java Island\n- JAVALI, RFS December 2011, to Java Island",
+      "lat": -8.7815,
+      "lng": 115.1788
+    },
+    {
+      "type": 2,
+      "name": "Denpasar",
+      "desc": "- JaKa2LaDeMa, RFS 2010, to Java Island",
+      "lat": -8.6705,
+      "lng": 115.2126
+    },
+    {
+      "type": 2,
+      "name": "Gianyar",
+      "desc": "- JaKa2LaDeMa, RFS 2010, to Lombok Island",
+      "lat": -8.5367,
+      "lng": 115.3314
+    },
+    {
+      "type": 2,
+      "name": "Sanur",
+      "desc": "- Link 1 Phase-2, RFS May 2005, to Lombok Island",
+      "lat": -8.7072,
+      "lng": 115.2626
+    },
+    {
+      "type": 2,
+      "name": "Bali",
+      "desc": "- Barat Timur Indonesia-2 (BTI-2), RFS 2028, to connect the entire Indonesia",
+      "lat": -8.4095,
+      "lng": 115.1889
+    },
+
+    {
+      "type": 2,
+      "name": "Seraya",
+      "desc": "- BALOK, RFS Feb 2016, to Lombok Island\n- Indonesia Global Gateway (IGG) System, RFS May 2018, to connect the entire Indonesia + Singapore",
+      "lat": -8.4335,
+      "lng": 115.6451
+    },
+    {
+      "type": 0,
+      "name": "Indonesia Super Corridor",
+      "desc": "",
+      "lat": -8.636521240797968,
+      "lng": 115.18337059153325
+    }
+  ]
+}

@@ -3,28 +3,28 @@
     {
       "type": 0,
       "name": "Nusantara",
-      "desc": "",
+      "desc": "Colocation only, no internet exchange. Provides scalable infrastructure for both government and businesses.",
       "lat": -8.6577801764274,
       "lng": 115.26364796412958
     },
     {
       "type": 0,
       "name": "Biznet",
-      "desc": "",
+      "desc": "Colocation only, no internet exchange. Tailored for hosting applications related to travel and tourism.",
       "lat": -8.787215874034448,
       "lng": 115.14147337162477
     },
     {
       "type": 0,
       "name": "CenterServ",
-      "desc": "",
+      "desc": "Colocation only, no internet exchange. Specially high-speed.",
       "lat": -8.76133018584595,
       "lng": 115.17917995483937
     },
     {
       "type": 0,
       "name": "Indonesia Super Corridor",
-      "desc": "",
+      "desc": "Colocation only, no internet exchange. Designed for cloud.",
       "lat": -8.636521240797968,
       "lng": 115.18337059153325
     },
@@ -79,11 +79,25 @@
       "lng": 115.6451
     },
     {
-      "type": 0,
-      "name": "Indonesia Super Corridor",
-      "desc": "",
-      "lat": -8.636521240797968,
-      "lng": 115.18337059153325
+      "type": 1,
+      "name": "CXC Denpasar",
+      "desc": "51 Peers",
+      "lat": -8.6705,
+      "lng": 115.2126
+    },
+    {
+      "type": 1,
+      "name": "JKT-IX Bali",
+      "desc": "8 Peers",
+      "lat": -8.7,
+      "lng": 115.2
+    },
+    {
+      "type": 1,
+      "name": "IIX-Bali",
+      "desc": "38 Peers",
+      "lat": -8.6,
+      "lng": 115.1
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/nwmedia-131/static/css/main.1b93ab07.css",
+    "main.js": "/nwmedia-131/static/js/main.4ef51c88.js",
+    "static/js/453.0324b97f.chunk.js": "/nwmedia-131/static/js/453.0324b97f.chunk.js",
+    "index.html": "/nwmedia-131/index.html",
+    "main.1b93ab07.css.map": "/nwmedia-131/static/css/main.1b93ab07.css.map",
+    "main.4ef51c88.js.map": "/nwmedia-131/static/js/main.4ef51c88.js.map",
+    "453.0324b97f.chunk.js.map": "/nwmedia-131/static/js/453.0324b97f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1b93ab07.css",
+    "static/js/main.4ef51c88.js"
+  ]
+}

@@ -56,6 +56,10 @@
   cursor: pointer;
 }
 
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+
 /* Marker styling */
 .marker {
   background-color: red;
@@ -83,4 +87,39 @@
   text-align: center;
   font-family: "Open Sans", sans-serif;
   white-space: pre-line;
+}
+
+/* info + legend */
+.map-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #fff;
+  margin-right: 20px;
+  font-family: Arial, sans-serif;
+  overflow: auto;
+  border-radius: 3px;
+}
+
+#features {
+  top: 0;
+  height: 100px;
+  margin-top: 20px;
+  width: 250px;
+}
+
+#legend {
+  padding: 10px;
+  box-shadow: 0 1px 2px rgba(0 0 0 0.1);
+  line-height: 18px;
+  margin-bottom: 40px;
+  width: 250px;
+}
+
+.legend-key {
+  display: inline-block;
+  border-radius: 20%;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
 }

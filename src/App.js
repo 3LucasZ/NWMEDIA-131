@@ -3,6 +3,8 @@ import { useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import info from "./info.json";
+import "./help.js";
+import { infraTypeToStr } from "./help.js";
 
 function App() {
   const mapRef = useRef();
@@ -21,20 +23,10 @@ function App() {
       ],
       zoom: 10,
       maxZoom: 20,
+      attributionControl: false,
     });
     info.markers.map((marker) => {
-      var classStr = "";
-      var typeStr = "";
-      if (marker.type === 0) {
-        classStr = "datacenter";
-        typeStr = "Datacenter";
-      } else if (marker.type === 1) {
-        classStr = "ixp";
-        typeStr = "Internet Exchange Point (IXP)";
-      } else if (marker.type === 2) {
-        classStr = "landing";
-        typeStr = "Cable Landing Station";
-      }
+      const [classStr, typeStr] = infraTypeToStr(marker.type);
       const el = document.createElement("div");
       el.className = "marker " + classStr;
       return new mapboxgl.Marker(el)
@@ -48,7 +40,28 @@ function App() {
         )
         .addTo(mapRef.current);
     });
+    // map controls
+    mapRef.current.addControl(new mapboxgl.NavigationControl());
+    mapRef.current.addControl(new mapboxgl.FullscreenControl());
 
+    // legend
+    const legend = document.getElementById("legend");
+    legend.innerHTML = "";
+    const types = [0, 1, 2];
+    types.forEach((type) => {
+      const [classStr, typeStr] = infraTypeToStr(type);
+      const element = document.querySelector("." + classStr);
+      const color = window.getComputedStyle(element).backgroundColor;
+      const item = document.createElement("div");
+      const key = document.createElement("span");
+      key.className = "legend-key";
+      key.style.backgroundColor = color;
+      const value = document.createElement("span");
+      value.innerHTML = `${typeStr}`;
+      item.appendChild(key);
+      item.appendChild(value);
+      legend.appendChild(item);
+    });
     return () => {
       mapRef.current.remove();
     };
@@ -58,6 +71,10 @@ function App() {
     <>
       <div id="title">Bali Digital Infrastructure Map</div>
       <div id="map-container" ref={mapContainerRef} />
+      {/* <div className="map-overlay" id="features">
+        <h2>US population density</h2>
+      </div> */}
+      <div className="map-overlay" id="legend"></div>
     </>
   );
 }

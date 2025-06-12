@@ -56,6 +56,7 @@ function App() {
 
   return (
     <>
+      <div id="title">Bali Digital Infrastructure Map</div>
       <div id="map-container" ref={mapContainerRef} />
     </>
   );
